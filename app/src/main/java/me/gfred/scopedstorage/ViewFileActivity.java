@@ -46,6 +46,7 @@ public class ViewFileActivity extends AppCompatActivity {
                     catch(IOException ex) {
                         return;
                     }
+                    break;
                 }
 
                 case "text": {
@@ -68,6 +69,7 @@ public class ViewFileActivity extends AppCompatActivity {
                         //You'll need to add proper error handling here
                     }
                     textView.setText(text.toString());
+                    break;
                 }
 
                 case "video": {
@@ -78,6 +80,7 @@ public class ViewFileActivity extends AppCompatActivity {
                     vv.start();
 
 //                    vv.setOnCompletionListener(mp -> finish());
+                    break;
                 }
             }
         }
